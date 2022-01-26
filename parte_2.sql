@@ -9,6 +9,54 @@ alter table kopas add column pts INT;
 -- Uruguai,84
 -- Inglaterra,108
 -- Espanha,105
+update  
+	kopas 
+set	
+	pts = 237
+where 
+	kopas.selecao like 'Brasil'
+
+update  
+	kopas 
+set	
+	pts = 221
+where 
+	kopas.selecao like 'Alemanha'
+
+update  
+	kopas 
+set	
+	pts = 156
+where 
+	kopas.selecao like 'Itália'
+
+update  
+	kopas 
+set	
+	pts = 144
+where 
+	kopas.selecao like 'Argentina'
+
+update  
+	kopas 
+set	
+	pts = 115
+where 
+	kopas.selecao like 'França'
+
+update  
+	kopas 
+set	
+	pts = 84
+where 
+	kopas.selecao like 'Uruguai'
+
+update  
+	kopas 
+set	
+	pts = 108
+where 
+	kopas.selecao like 'Inglaterra'
 
 update  
 	kopas 
@@ -25,7 +73,7 @@ create table if not exists estadios(
 	edicao varchar,
 	ano varchar(4),
 	estadio varchar, 
-	locali varchar(128),
+	'local' varchar(128),
 	publico_pagante INT
 )
 
